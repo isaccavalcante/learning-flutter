@@ -1,11 +1,11 @@
-# hello_world
+# stateless_widgets
 
-This project is a simple hello world made in flutter.
+This project is a simple stateless_widgets demonstration.
 
 ## Screenshots
 
-![Screenshot](../../screenshots/000.jpg)
+![Screenshot](../../screenshots/001.jpg)
 
 ### References:
 
-[Flutter SDK Tutorial - Hello World!](https://www.youtube.com/watch?v=CEPCGXQ7IQg&list=PLxU9Ryxq6p58PsNmJL70J4_7UzfSqf35n)
+[Flutter SDK Tutorial - Stateless Widgets!](https://www.youtube.com/watch?v=6f1rTeDm9oE&index=2&list=PLxU9Ryxq6p58PsNmJL70J4_7UzfSqf35n)
