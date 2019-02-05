@@ -6,7 +6,8 @@ void main(){
     new MaterialApp(
       home: new SecondPage(),
       routes: <String, WidgetBuilder> {
-      "/secondPage":(BuildContext context) => new SecondPage()
+      "/HomePage":(BuildContext context) => new HomePage(),
+      "/SecondPage":(BuildContext context) => new SecondPage()
       }
     )
   );
@@ -24,7 +25,7 @@ class HomePage extends StatelessWidget{
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               new IconButton(icon: new Icon(Icons.home, color: Colors.deepOrange,),
-                onPressed: null,
+                onPressed: (){Navigator.of(context).pushNamed("/SecondPage");},
                 iconSize: 70.0 ,),
               new Text("Home")
             ]
@@ -45,9 +46,14 @@ class SecondPage extends StatelessWidget{
       body: new Container(
         child: new Center(
           child: new Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              new Text("Hello"),
-              new Text("World")
+              new IconButton(
+                icon: new Icon(Icons.arrow_back, color: Colors.lightBlueAccent),
+                  onPressed: (){Navigator.of(context).pushNamed("/HomePage");},
+                  iconSize: 70.0
+                ),
+              new Text("Cool!"),
             ]
           ),
         ),  
